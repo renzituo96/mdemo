@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
 // 直接从环境变量读取Supabase配置
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
-const SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY
+let SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
+let SUPABASE_KEY = import.meta.env.VITE_SUPABASE_KEY
 
 // 确保必要的配置存在
 if (!SUPABASE_URL) {
